@@ -1,0 +1,33 @@
+{
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "persistent-workspaces": { "*": 5 },
+    "cursor" : true,
+    "format-icons": {
+      "active": "◉",
+      "persistent": "",
+      "empty": ""
+    }
+  },
+
+  "network": {
+    "format-wifi": " {ipaddr}",
+    "format-ethernet": "ipv4: {ipaddr}",
+    "format-disconnected": ""
+  },
+
+  "battery": {
+    "interval": 20,
+    "format": "{icon} {capacity}%",
+    "format-icons": ["󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂂","󰁹"]
+  },
+
+  "clock": {
+    "format": "{:%I:%M %p}"   // %I = ore 12h, %M = minuti, %p = AM/PM
+  },
+
+  "pulseaudio": {
+    "format": "vol {volume}%",
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+  }
+}

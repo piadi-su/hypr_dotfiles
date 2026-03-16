@@ -1,0 +1,58 @@
+/* Barra generale */
+* {
+    font-family: 'JetBrains Mono Nerd Font';
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: #ffffff;
+    background: transparent;
+}
+
+/* Isoletta workspace unica */
+#workspaces {
+    background: #000000;
+    border-radius: 15px;
+    padding: 6px 15px;
+    margin: 0 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Numeri workspace */
+#workspaces button {
+    background: transparent;
+    color: #ffffff;
+    border: none;
+    padding: 0 8px;
+    margin: 0;
+    font-weight: normal;
+    text-shadow: 0 0 2px rgba(255,255,255,0.2);
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+/* Workspace attivo: cambia solo colore e text-shadow */
+#workspaces button.active {
+    color: #00ffcc;  /* colore attivo */
+    text-shadow: 0 0 4px #00ffcc;
+}
+
+
+/* Moduli a destra come isoletta */
+#battery, #network, #clock, #pulseaudio {
+    background: #000000;
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 4px 10px;
+    margin-left: 6px;
+    margin: 0 5px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.4);
+    transition: all 0.2s ease;
+}
+
+/* Hover leggero */
+#workspaces button:hover,
+#battery:hover,
+#network:hover,
+#clock:hover,
+#pulseaudio:hover {
+    background: #222222;
+}
