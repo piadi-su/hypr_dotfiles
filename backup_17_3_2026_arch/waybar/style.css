@@ -1,0 +1,59 @@
+@import "color.css";
+
+/* ===== GLOBAL ===== */
+* {
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 12px;
+    color: @foreground;
+}
+
+/* ===== BAR ===== */
+window#waybar {
+    background: @background;
+    margin: 5px 10px;
+    border-radius: 14px;
+}
+
+/* ===== WORKSPACES ===== */
+#workspaces {
+    margin-left: 10px;
+}
+
+#workspaces button {
+    padding: 5px 10px;
+    margin: 3px;
+    border-radius: 8px;
+    background: transparent;
+    transition: all 0.2s ease;
+}
+
+/* workspace attivo */
+#workspaces button.active {
+    padding: 5px 20px; /* 🔥 si allarga */
+    background: rgba(255, 255, 255, 0.2); /* 🔥 trasparente */
+    color: @foreground;
+}
+
+/* hover */
+#workspaces button:hover {
+    background: @hover;
+}
+
+/* ===== MODULES ===== */
+#clock,
+#pulseaudio,
+#network,
+#tray,
+#custom-media,
+#custom-ip {
+    padding: 0 10px;
+}
+
+/* ===== SMOOTH ===== */
+#workspaces button,
+#clock,
+#pulseaudio,
+#network,
+#tray {
+    transition: all 0.2s ease;
+}
