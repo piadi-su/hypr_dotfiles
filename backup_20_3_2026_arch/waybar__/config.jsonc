@@ -1,0 +1,60 @@
+{
+  "layer": "top",
+  "position": "top",
+  "margin-top": 0,
+  "width": 1920,
+
+  //"modules-left": ["hyprland/workspaces"],
+  //"modules-center": ["custom/media"],
+  //"modules-right": ["tray", "network", "clock", "custom/ip", "pulseaudio"],
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["custom/media"],
+  "modules-right": ["tray", "network", "clock", "custom/ip", "pulseaudio"],
+
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "persistent-workspaces": {
+      "*": 9
+    }
+  },
+
+  "clock": {
+    "interval": 1,
+    "format": " {:%H:%M}",
+    "format-alt": " {:%H:%M   %Y-%m-%d}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>"
+  },
+
+  "pulseaudio": {
+    "format": "{volume}% {icon} ",
+    "format-muted": "󰝟",
+    "format-icons": ["", ""],
+    "scroll-step": 1,
+    "on-click": "pavucontrol"
+  },
+
+  "network": {
+    "format-wifi": "{essid} ",
+    "format-ethernet": "",
+    "format-disconnected": ""
+  },
+
+  "custom/ip": {
+    "exec": "~/.config/waybar/localip.sh",
+    "interval": 5,
+    "format": "{}"
+  },
+
+  "tray": {
+    "icon-size": 14,
+    "spacing": 8
+  },
+
+  "custom/media": {
+    "exec": "~/.config/waybar/media.sh",
+    "interval": 1,
+    "return-type": "string",
+    "on-click": "playerctl play-pause",
+    "tooltip": false
+  }
+}

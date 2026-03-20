@@ -1,0 +1,82 @@
+# add_newline = false
+#
+# format = """
+# $directory $git_branch
+# $character
+# """
+#
+# [directory]
+# format = "[$path]($style)"
+# style = "bold cyan"
+# truncation_length = 0
+#
+# [git_branch]
+# format = "[$branch]($style)"
+# style = "bold purple"
+#
+# [character]
+# success_symbol = "[ホ](bold purple) "
+# error_symbol = "[ホ](bold red) "
+
+#kanji
+# テ
+# し
+# わ
+# ホ
+# ネ
+# ト
+# ま
+
+#lamba
+# λ
+
+#--------------------------------
+add_newline = false
+
+format = "[\\[](bold red)$username[@](bold green)$hostname $directory[\\]](bold red)$character"
+
+[username]
+show_always = true
+style_user = "bold yellow"
+style_root = "bold yellow"
+format = "[$user]($style)"
+
+[hostname]
+ssh_only = false
+style = "bold blue"
+format = "[$hostname]($style)"
+
+[directory]
+truncation_length = 1
+truncate_to_repo = false
+style = "bold purple"
+format = " [$path]($style)"
+
+[character]
+success_symbol = "[\\$](white)"
+error_symbol = "[\\$](white)"
+#--------------------------------
+
+# add_newline = false
+# format = """
+# $hostname $directory $git_branch
+# $character
+# """
+#
+# [hostname]
+# ssh_only = false
+# format = "[$hostname](fg:#888888)"
+#
+# [directory]
+# format = "$path"
+# style = "fg:#888888"
+#
+# [git_branch]
+# format = "$branch"
+# style = "fg:#000000"
+#
+# [character]
+# success_symbol = "[\\$ ](fg:#888888)"
+# error_symbol = "[\\$ ](fg:#cc241d)"
+#
+

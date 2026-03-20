@@ -1,0 +1,55 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: monospace;
+  font-size: 12px;
+  min-height: 0;
+  color: #ffffff;
+}
+
+/* Barra */
+window#waybar {
+  background: #000000;
+  padding: 4px 0; /* 👈 spazio verticale interno */
+}
+
+/* Workspaces container (la pill) */
+#workspaces {
+  background: #111111; /* leggermente diverso dal nero */
+  border-radius: 24px;
+
+  padding: 4px 10px;
+  margin: 4px 8px; /* 👈 QUESTO crea lo spazio attorno */
+}
+
+/* Bottoni */
+#workspaces button {
+  padding: 3px 8px;
+  margin: 2px;
+  border-radius: 12px;
+  background: transparent;
+  color: #ffffff;
+
+  min-width: 16px;
+  transition: all 0.2s ease;
+}
+
+/* Attivo */
+#workspaces button.active {
+  background: rgba(255, 255, 255, 0.2);
+  min-width: 28px;
+}
+
+/* Hover */
+#workspaces button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Moduli a destra */
+#network,
+#clock,
+#pulseaudio,
+#tray {
+  padding: 0 10px;
+}
+

@@ -1,0 +1,40 @@
+{
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "all-outputs": false
+  },
+
+  "custom/ip": {
+    "exec": "~/.config/waybar/localip.sh",
+    "interval": 5,
+    "format": "ipv4 {}"
+  },
+
+  "tray": {
+    "icon-size": 14,
+    "spacing": 8
+  },
+
+  "battery": {
+    "interval": 20,
+    "format": "{icon} {capacity}%",
+    "format-icons": ["󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂂","󰁹"]
+  },
+
+  "clock": {
+    "format": " {:%I:%M %p}"   // %I = ore 12h, %M = minuti, %p = AM/PM
+  },
+
+  "pulseaudio": {
+    "format": " {volume}%",
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+  },
+
+  "custom/media": {
+    "exec": "~/.config/waybar/media.sh",
+    "interval": 1,
+    "return-type": "string",
+    "on-click": "playerctl play-pause",
+    "tooltip": false
+  }
+}

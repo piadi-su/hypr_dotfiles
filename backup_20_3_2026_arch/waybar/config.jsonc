@@ -1,0 +1,35 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 26,
+
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": [],
+  "modules-right": ["custom/ip", "clock", "pulseaudio", "tray"],
+
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "on-click": "activate"
+  },
+
+  "custom/ip": {
+    "exec": "~/.config/waybar/localip.sh",
+    "interval": 5,
+    "format": "ipv4 {}"
+  },
+
+  "clock": {
+    "format": "  {:%I:%M %p}"   // %I = ore 12h, %M = minuti, %p = AM/PM
+  },
+
+  "pulseaudio": {
+    "format": " {volume}%",
+    "format-muted": "muted",
+    "tooltip": false
+  },
+
+  "tray": {
+    "icon-size": 14,
+    "spacing": 6
+  }
+}
