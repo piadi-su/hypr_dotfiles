@@ -1,0 +1,119 @@
+@import "color.css";
+
+* {
+  border: none;
+  font-family: "JetBrains Mono Nerd Font";
+  font-size: 10px;
+  min-height: 0;
+  color: @foreground;
+}
+
+/* --------------------------
+   BARRA (trasparente, senza colore)
+   -------------------------- */
+window#waybar {
+  background: transparent;
+  padding: 4px 0;
+}
+
+/* =========================
+   WORKSPACES (isola)
+   ========================= */
+#workspaces {
+  background: @color0;
+  border-radius: 24px;
+  padding: 4px 10px;
+  margin: 4px 8px;
+}
+
+#workspaces button {
+  padding: 3px 8px;
+  margin: 2px;
+  border-radius: 12px;
+  background: transparent;
+  color: @foreground;
+  min-width: 16px;
+  transition: all 0.2s ease;
+}
+
+#workspaces button.active {
+  background: @color2;
+  color: @background;
+  min-width: 28px;
+}
+
+#workspaces button:hover {
+  background: @color1;
+}
+
+/* =========================
+   CUSTOM MODULE: IP LOCALE
+   ========================= */
+#custom-ip {
+  background: @color0;
+  border-radius: 24px;
+  padding: 4px 12px;
+  margin: 4px 6px;
+  transition: all 0.2s ease;
+}
+
+#custom-ip:hover {
+  background: @color1;
+}
+
+/* =========================
+   CLOCK
+   ========================= */
+#clock {
+  background: @color0;
+  border-radius: 24px;
+  padding: 4px 12px;
+  margin: 4px 6px;
+  transition: all 0.2s ease;
+}
+
+#clock:hover {
+  background: @color1;
+}
+
+/* =========================
+   PULSEAUDIO
+   ========================= */
+#pulseaudio,
+#pulseaudio.muted {
+  background: @color0;
+  border-radius: 24px;
+  padding: 4px 12px;
+  margin: 4px 6px;
+  transition: all 0.2s ease;
+}
+
+#pulseaudio:hover,
+#pulseaudio.muted:hover {
+  background: @color1;
+}
+
+/* =========================
+   TRAY
+   ========================= */
+#tray {
+  background: @color0;
+  border-radius: 24px;
+  padding: 4px 12px;
+  margin: 4px 6px;
+  transition: all 0.2s ease;
+}
+
+#tray:hover {
+  background: @color1;
+}
+
+/* =========================
+   TOOLTIP
+   ========================= */
+tooltip {
+  background: @color0;
+  color: @foreground;
+  border-radius: 12px;
+  padding: 6px;
+}

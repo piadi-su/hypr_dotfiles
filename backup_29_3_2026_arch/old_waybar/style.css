@@ -1,0 +1,60 @@
+@import "color.css";
+
+* {
+  border: none;
+  border-radius: 0;
+  /* font-family: "monocraft"; */
+  font-family: "JetBrains Mono Nerd Font";
+  /* font-family: "Iosevka Nerd Font Mono"; */
+  font-size: 10px;
+  min-height: 0;
+  color: @foreground; /* 👈 testo da pywal */
+}
+
+/* Barra */
+window#waybar {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 4px 0;
+}
+
+/* Workspaces container (la pill) */
+#workspaces {
+  background: @color0; /* 👈 da pywal */
+  border-radius: 24px;
+
+  padding: 4px 10px;
+  margin: 4px 8px;
+}
+
+/* Bottoni */
+#workspaces button {
+  padding: 3px 8px;
+  margin: 2px;
+  border-radius: 12px;
+  background: transparent;
+  color: @foreground;
+
+  min-width: 16px;
+  transition: all 0.2s ease;
+}
+
+/* Attivo */
+#workspaces button.active {
+  background: @color2; /* 👈 colore principale */
+  color: @background;  /* 👈 contrasto */
+  min-width: 28px;
+}
+
+/* Hover */
+#workspaces button:hover {
+  background: @color1;
+}
+
+/* Moduli a destra */
+#network,
+#clock,
+#pulseaudio,
+#tray {
+  padding: 0 10px;
+  color: @foreground; /* 👈 anche qui */
+}
