@@ -1,4 +1,4 @@
-# My Personal i3 Dotfiles
+# My Personal hypr Dotfiles
 
 This repository contains my **personal dotfiles for hyprland**. These configurations reflect my daily setup and preferences for a productive and minimalistic Linux environment.
 
