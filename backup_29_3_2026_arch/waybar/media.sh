@@ -14,5 +14,5 @@ title=$(playerctl metadata title 2>/dev/null)
 if [ -z "$artist" ] && [ -z "$title" ]; then
     echo "$icon  Nothing playing"
 else
-    echo "$icon  $artist - $title"
+    echo "$icon  ${artist:0:15} - ${title:0:20}"
 fi

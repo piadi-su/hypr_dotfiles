@@ -3,13 +3,13 @@
 * {
   border: none;
   font-family: "JetBrains Mono Nerd Font";
-  font-size: 10px;
+  font-size: 12px;
   min-height: 0;
   color: @foreground;
 }
 
 /* --------------------------
-   BARRA (trasparente, senza colore)
+   BARRA (trasparente)
    -------------------------- */
 window#waybar {
   background: transparent;
@@ -24,6 +24,7 @@ window#waybar {
   border-radius: 24px;
   padding: 4px 10px;
   margin: 4px 8px;
+  border: 1px solid @color1;
 }
 
 #workspaces button {
@@ -47,19 +48,69 @@ window#waybar {
 }
 
 /* =========================
-   CUSTOM MODULE: IP LOCALE
+   MUSIC
+   ========================= */
+#custom-media {
+  background: @color0;
+  border-radius: 24px;
+  padding: 4px 12px;
+  margin: 4px 6px;
+  border: 1px solid @color1;
+  transition: all 0.2s ease;
+}
+
+#custom-media:hover {
+  background: @color1;
+}
+
+/* =========================
+   IP LOCALE
    ========================= */
 #custom-ip {
   background: @color0;
   border-radius: 24px;
   padding: 4px 12px;
   margin: 4px 6px;
+  border: 1px solid @color1;
   transition: all 0.2s ease;
 }
 
 #custom-ip:hover {
   background: @color1;
 }
+
+/* =========================
+   CPU
+   ========================= */
+#cpu {
+  background: @color0;
+  border-radius: 24px;
+  padding: 4px 12px;
+  margin: 4px 6px;
+  border: 1px solid @color1;
+  transition: all 0.2s ease;
+}
+
+#cpu:hover {
+  background: @color1;
+}
+
+/* =========================
+   RAM
+   ========================= */
+#custom-ram {
+  background: @color0;
+  border-radius: 24px;
+  padding: 4px 12px;
+  margin: 4px 6px;
+  border: 1px solid @color1;
+  transition: all 0.2s ease;
+}
+
+#custom-ram:hover {
+  background: @color1;
+}
+
 
 /* =========================
    CLOCK
@@ -69,6 +120,7 @@ window#waybar {
   border-radius: 24px;
   padding: 4px 12px;
   margin: 4px 6px;
+  border: 1px solid @color1;
   transition: all 0.2s ease;
 }
 
@@ -85,6 +137,7 @@ window#waybar {
   border-radius: 24px;
   padding: 4px 12px;
   margin: 4px 6px;
+  border: 1px solid @color1;
   transition: all 0.2s ease;
 }
 
@@ -101,6 +154,7 @@ window#waybar {
   border-radius: 24px;
   padding: 4px 12px;
   margin: 4px 6px;
+  border: 1px solid @color1;
   transition: all 0.2s ease;
 }
 
@@ -116,4 +170,5 @@ tooltip {
   color: @foreground;
   border-radius: 12px;
   padding: 6px;
+  border: 1px solid @color1;
 }
