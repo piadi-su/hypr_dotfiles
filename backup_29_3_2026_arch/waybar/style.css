@@ -111,6 +111,15 @@ window#waybar {
   background: @color1;
 }
 
+#custom-cava{
+  background: @color0;
+  border-radius: 24px;
+  padding: 4px 12px;
+  margin: 4px 6px;
+  border: 1px solid @color1;
+  color: @color2; /* colore barre */
+  font-size: 12px;
+}
 
 /* =========================
    CLOCK

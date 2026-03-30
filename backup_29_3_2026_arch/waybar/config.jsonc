@@ -3,7 +3,7 @@
   "position": "top",
   "height": 22,
 
-  "modules-left": ["hyprland/workspaces"],
+  "modules-left": ["hyprland/workspaces", "custom/cava"],
   "modules-center": ["custom/media"],
   "modules-right": ["cpu","custom/ram","custom/ip", "clock", "pulseaudio", "tray"],
 
@@ -13,7 +13,7 @@
   },
 
   "custom/ip": {
-    "exec": "~/.config/waybar/localip.sh",
+    "exec": "~/.config/waybar/scripts/localip.sh",
     "interval": 5,
     "format": "󰈀 {}"
   },
@@ -33,7 +33,7 @@
   },
 
   "custom/media": {
-    "exec": "~/.config/waybar/media.sh",
+    "exec": "~/.config/waybar/scripts/media.sh",
     "interval": 2,
     "return-type": "text",
     "on-click": "playerctl play-pause"
@@ -45,10 +45,15 @@
   },
 
   "custom/ram": {
-    "exec": "~/.config/waybar/ram.sh",
+    "exec": "~/.config/waybar/scripts/ram.sh",
     "interval": 5,
     "format": "  {}",
     "return-type": "text"
+  },
+
+  "custom/cava": {
+    "format": "{}",
+    "exec": "~/.config/waybar/scripts/cava.sh"
   },
 
   "tray": {
