@@ -1,0 +1,185 @@
+@import "color.css";
+
+* {
+  border: none;
+  /* font-family: "JetBrains Mono Nerd Font"; */
+  /* font-family: "Iosevka Nerd Font"; */
+  font-family: "Hack Nerd Font";
+  font-size: 12px;
+  min-height: 0;
+  color: @foreground;
+}
+
+/* --------------------------
+   BARRA (trasparente)
+   -------------------------- */
+window#waybar {
+  background: transparent;
+  padding: 4px 0;
+}
+
+/* =========================
+   WORKSPACES (isola)
+   ========================= */
+#workspaces {
+  background: @color0;
+  border-radius: 24px;
+  padding: 4px 10px;
+  margin: 4px 8px;
+  border: 1px solid @color1;
+}
+
+#workspaces button {
+  padding: 3px 8px;
+  margin: 2px;
+  border-radius: 12px;
+  background: transparent;
+  color: @foreground;
+  min-width: 16px;
+  transition: all 0.2s ease;
+}
+
+#workspaces button.active {
+  background: @color2;
+  color: @background;
+  min-width: 28px;
+}
+
+#workspaces button:hover {
+  background: @color1;
+}
+
+/* =========================
+   MUSIC
+   ========================= */
+#custom-media {
+  background: @color0;
+  border-radius: 24px;
+  padding: 4px 12px;
+  margin: 4px 6px;
+  border: 1px solid @color1;
+  transition: all 0.2s ease;
+}
+
+#custom-media:hover {
+  background: @color1;
+}
+
+/* =========================
+   IP LOCALE
+   ========================= */
+#custom-ip {
+  background: @color0;
+  border-radius: 24px;
+  padding: 4px 12px;
+  margin: 4px 6px;
+  border: 1px solid @color1;
+  transition: all 0.2s ease;
+}
+
+#custom-ip:hover {
+  background: @color1;
+}
+
+/* =========================
+   CPU
+   ========================= */
+#cpu {
+  background: @color0;
+  border-radius: 24px;
+  padding: 4px 12px;
+  margin: 4px 6px;
+  border: 1px solid @color1;
+  transition: all 0.2s ease;
+}
+
+#cpu:hover {
+  background: @color1;
+}
+
+/* =========================
+   RAM
+   ========================= */
+#custom-ram {
+  background: @color0;
+  border-radius: 24px;
+  padding: 4px 12px;
+  margin: 4px 6px;
+  border: 1px solid @color1;
+  transition: all 0.2s ease;
+}
+
+#custom-ram:hover {
+  background: @color1;
+}
+
+#custom-cava{
+  background: @color0;
+  border-radius: 24px;
+  padding: 4px 12px;
+  margin: 4px 6px;
+  border: 1px solid @color1;
+  color: @color2; /* colore barre */
+  font-size: 12px;
+}
+
+/* =========================
+   CLOCK
+   ========================= */
+#clock {
+  background: @color0;
+  border-radius: 24px;
+  padding: 4px 12px;
+  margin: 4px 6px;
+  border: 1px solid @color1;
+  transition: all 0.2s ease;
+}
+
+#clock:hover {
+  background: @color1;
+}
+
+/* =========================
+   PULSEAUDIO
+   ========================= */
+#pulseaudio,
+#pulseaudio.muted {
+  background: @color0;
+  border-radius: 24px;
+  padding: 4px 12px;
+  margin: 4px 6px;
+  border: 1px solid @color1;
+  transition: all 0.2s ease;
+}
+
+#pulseaudio:hover,
+#pulseaudio.muted:hover {
+  background: @color1;
+}
+
+/* =========================
+   TRAY
+   ========================= */
+#tray {
+  background: @color0;
+  border-radius: 24px;
+  padding: 4px 12px;
+  margin: 4px 6px;
+  border: 1px solid @color1;
+  transition: all 0.2s ease;
+}
+
+#tray:hover {
+  background: @color1;
+}
+
+/* =========================
+   TOOLTIP
+   ========================= */
+tooltip {
+  background: @color0;
+  color: @foreground;
+  border-radius: 12px;
+  padding: 6px;
+  border: 1px solid @color1;
+}
