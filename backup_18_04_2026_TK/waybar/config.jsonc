@@ -1,0 +1,84 @@
+{
+    "layer": "top",
+    "position": "top",
+    "reload_style_on_change": true,
+    
+    "modules-left": [
+        "hyprland/workspaces",
+    ],
+    "modules-center": [
+    ],
+    "modules-right": [
+        "tray",
+        "battery",
+        "network",
+        "pulseaudio",
+        "clock",
+    ],
+
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            // "default": "",
+        },
+        "persistent-workspaces": {
+            "*": [ 1,2,3,4,5,6,7 ]
+        }
+    },
+
+
+    "tray": {
+        "spacing": 5,
+    },
+
+    "battery": {
+        "interval": 3,
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-icons": ["", "", "", "", ""],
+        "tooltip-format": "{capacity}%, {time}",
+        "tooltip-format-charging": "{capacity}% (charging), {time}",
+        "tooltip-format-plugged": "{capacity}% (full)",
+    },
+
+    "network": {
+        "format-wifi": "",
+        "format-ethernet": "",
+        "format-disconnected": "",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%)",
+        "tooltip-format-ethernet": "{ipaddr}/{cidr}",
+        "tooltip-format-disconnected": "No Internet",
+        "on-click": "wezterm start --always-new-process nmtui",
+    },
+
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-muted": "{volume}% ",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-bluetooth-muted": "{volume}% ",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+
+    "clock": {
+        "interval": 1,
+        "format": "{:%I:%M %p}",
+        "tooltip-format": "{:%m/%d/%Y\n%I:%M:%S %p}",
+    },
+}

@@ -1,0 +1,15 @@
+@import "/home/piadi/.cache/wal/colors-waybar.css";
+
+/* @define-color module-bg @background;    */
+/* @define-color tooltip-bg @background;            */
+@define-color inactive @color1;               
+@define-color fg @foreground;                
+@define-color workspace-fg @fg;
+
+
+@define-color background #000000;
+
+@define-color red @color2;
+@define-color blue @color3;
+@define-color yellow @color4;
+@define-color green @color6;
