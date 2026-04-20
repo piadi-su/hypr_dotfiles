@@ -1,0 +1,99 @@
+{
+  "output": "DP-5",
+  "layer": "top",
+  "position": "top",
+  "height": 22,
+  "width": 1920,
+
+  "modules-left": [ "hyprland/workspaces", "custom/sep","tray"],
+  "modules-center": ["clock"],
+  "modules-right": ["custom/sep","custom/media","custom/sep","cpu","custom/sep","custom/ram","custom/sep", "custom/ip","custom/sep", "pulseaudio"],
+
+  "hyprland/workspaces": {
+      "all-outputs": true,
+      "format": "{icon}",
+      "format-icons": {
+	  "1": " 1   ",
+	  "2": " 2   ",
+	  "3": " 3   ",
+	  "4": " 4   ",
+	  "5": " 5   ",
+	  "6": " 6   ",
+	  "7": " 7 ",
+	  "8": " 8 ",
+	  "9": " 9 ",
+	  "10": "[D-2]",
+	  "default": "",
+// 
+      },
+      "on-click": "activate"
+  },
+
+  "custom/ip": {
+    "exec": "~/.config/waybar/scripts/localip.sh",
+    "interval": 5,
+    "format": "󰈀 {}"
+  },
+
+  // "clock": {
+  //   "format": "  {:%I:%M %p}"   // %I = ore 12h, %M = minuti, %p = AM/PM
+  //   // "format": " time:{:%I:%M %p}"   // %I = ore 12h, %M = minuti, %p = AM/PM
+  // },
+  "clock": {
+    "format": "  {:%a/%d %I:%M %p}"
+  },
+
+  "pulseaudio": {
+    "format": " {volume}% ",
+    "format-muted": "muted",
+    "tooltip": false
+  },
+
+  // "custom/media": {
+  //   "exec": "~/.config/waybar/scripts/media.sh",
+  //   "interval": 2,
+  //   "return-type": "text",
+  //   "on-click": "playerctl play-pause"
+  // },
+
+  "custom/media": {
+      "exec": "~/.config/waybar/scripts/media.sh",
+      "interval": 2,
+      "on-click": "~/.config/waybar/scripts/media.sh play-pause",
+      "on-scroll-up": "~/.config/waybar/scripts/media.sh next",
+      "on-scroll-down": "~/.config/waybar/scripts/media.sh prev",
+      "return-type": "text"
+  },
+
+  "cpu": {
+    "format": " {usage}%",
+    "interval": 2
+  },
+
+  "custom/ram": {
+    "exec": "~/.config/waybar/scripts/ram.sh",
+    "interval": 5,
+    "format": "  {}",
+    "return-type": "text"
+  },
+
+  "custom/cava": {
+    "format": "{}",
+    "exec": "~/.config/waybar/scripts/cava.sh"
+  },
+
+  "mpris": {
+      "format": "  {title} - {artist}",
+      "max-length": 30
+  },
+
+  "tray": {
+    "icon-size": 14,
+    "spacing": 6
+  },
+    
+  "custom/sep": {
+      "format": " ",
+      "interval": "once"
+  }
+}
