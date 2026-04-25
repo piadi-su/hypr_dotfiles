@@ -1,0 +1,64 @@
+@import "color.css";
+
+* {
+  border: none;
+  /* font-family: "Hack Nerd Font"; */
+  /* font-family: "Comic Mono"; */
+  font-family: "JetBrains Mono";
+  font-size: 15px;
+  min-height: 0;
+}
+
+/* =========================
+   BAR
+   ========================= */
+window#waybar {
+  background: rgba(0, 0, 0, 1);
+}
+
+/* =========================
+   MODULI (TUTTO NEUTRO)
+   ========================= */
+#clock,
+#cpu,
+#custom-ram,
+#custom-ip,
+#pulseaudio,
+#custom-media,
+#tray {
+  background: transparent;
+  padding: 0 5px;
+  color: @foreground;
+}
+
+/* =========================
+   WORKSPACES (UNICO ELEMENTO COLORATO)
+   ========================= */
+#workspaces {
+  background: transparent;
+  padding: 0 5px;
+}
+
+#workspaces button {
+  background: transparent;
+  border: none;
+  color: @foreground;
+  padding: 0 4px;
+}
+
+#workspaces button:hover {
+  color: @color1;
+}
+
+#workspaces button.active {
+  color: @color2;
+  font-weight: bold;
+}
+
+/* =========================
+   SEPARATORI (:: o / ecc)
+   ========================= */
+#custom-sep {
+  color: @color1;
+  padding: 0 6px;
+}
